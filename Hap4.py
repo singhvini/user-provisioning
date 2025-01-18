@@ -9,7 +9,6 @@ app = Flask(__name__)
 def excel_to_json(file_path):
     
     df = pd.read_excel(file_path)
-
     
     base_keys = [
         "requestId", "userId", "firstName", "lastName",
